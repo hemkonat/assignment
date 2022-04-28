@@ -6,13 +6,13 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class SortPipe implements PipeTransform {
 
    sorted = [];
-  transform(value: any, args: string): any {
-    if(args==='lth'){
+  transform(value: any, sort: string, array: any): any {
+    if(sort === 'lth'){
       this.sorted = value.sort((a: any,b: any) => a.price-b.price)
-     } else if(args === 'htl') {
+     } else if(sort === 'htl') {
       this.sorted = value.sort((a: any,b: any) => b.price-a.price)
      } else {
-       this.sorted = value;
+       this.sorted = array;
      }
 
     return this.sorted;

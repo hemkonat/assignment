@@ -17,7 +17,7 @@
     </div>
   </div>
 <div class="d-flex justify-content-between p-5 wrap">
-    <div class="card my-3"  [ngClass]="flex === 'list'?'cardList':'cardGrid'" *ngFor="let product of products | lionSort : sorted;let index=index;">
+    <div class="card my-3"  [ngClass]="flex === 'list'?'cardList':'cardGrid'" *ngFor="let product of products | lionSort : sorted : initialArray;let index=index;">
       <div class="card-body">
         <div class="d-flex justify-content-between">
           <h5 class="card-title">{{ product.title }}</h5>
