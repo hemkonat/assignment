@@ -19,7 +19,6 @@ export class TimerSubjectComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.couteraction$.subscribe(event =>{
-    console.log(event);
     this.timer == 0?this.timer = Number(event.value):'';
     this.timerbackup = Number(event.value);
     if(this.flag === 0 && event.action === 'Start/Pause'){
@@ -55,7 +54,6 @@ export class TimerSubjectComponent implements OnInit {
       this.interval = setInterval(() => {
         this.timer -= 1;
         this.flag = 1;
-        console.log(this.timer);
         if (this.timer <= 0) {
           clearInterval(this.interval);
         } else {
