@@ -35,7 +35,6 @@ export class CounterActionComponent implements OnInit, OnChanges {
   constructor() {}
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.pauselogs?.paused);
     if (!changes['pauselogs']['firstChange']) {
       this.pauselogs.key !== 0
         ? this.form.controls['input'].disable()
@@ -61,7 +60,6 @@ export class CounterActionComponent implements OnInit, OnChanges {
   }
 
   action(value: any): any {
-    console.log(this.form);
     if (!this.form.controls['input'].errors) {
       this.count.emit({
         action: value,

@@ -24,6 +24,7 @@ export class CategoryComponent implements OnInit {
   public bool = false;
   sorted: any;
   flex: any;
+  initialArray: products[] = [];
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
@@ -44,6 +45,7 @@ export class CategoryComponent implements OnInit {
     this.http.get(this.productsUrl+'products').subscribe((res: any) =>{
       if(res && res.length){
       this.products = [...res,...res];
+      this.initialArray = [...res,...res];
       }
     });
     setTimeout(() =>{
