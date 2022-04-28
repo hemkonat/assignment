@@ -1,0 +1,4 @@
+<div class="p-5 d-flex justify-content-start flex-column border border-dark border-3 align-items-center width">
+    <h5 *ngFor="let log of service.logsArray$|async">{{log.key}} &nbsp; at &nbsp; {{log.time | date: 'medium' }}</h5>
+    </div>
+    

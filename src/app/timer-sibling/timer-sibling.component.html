@@ -1,0 +1,19 @@
+<div class="border border-dark border-3" style="margin: 0px 8px;">
+    <div class="d-flex justify-content-around flex-wrap my-5" style="width: 90vw;">
+      <div class="flex">
+        <lion-counter [count]="timer"></lion-counter>
+      </div>
+      <div class="flex">
+        <lion-counter-action [pauselogs]="pauseLogs" (count)="enteredTimer($event)"></lion-counter-action>
+      </div>
+    </div>
+    <div class="d-flex justify-content-around flex-wrap my-5" style="width: 90vw">
+      <div class="flex">
+        <lion-counter-logs [logs]="logsArray"></lion-counter-logs>
+      </div>
+      <div class="flex">
+          <lion-counter-track [track]="logsTrack"></lion-counter-track>
+        </div>
+    </div>
+  </div>
+  

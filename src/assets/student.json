@@ -1,0 +1,36 @@
+{
+    "students":[
+        {
+          "name": "Jacob",
+          "class": 1,
+          "section": "A",
+          "sub1": 29,
+          "sub2": 84,
+          "sub3": 49
+        },
+        {
+          "name": "Mark",
+          "class": 1,
+          "section": "A",
+          "sub1": 34,
+          "sub2": 65,
+          "sub3": 99
+        },
+        {
+          "name": "steve",
+          "class": 1,
+          "section": "A",
+          "sub1": 59,
+          "sub2": 85,
+          "sub3": 1
+        },
+        {
+          "name": "Larry",
+          "class": 1,
+          "section": "A",
+          "sub1": 37,
+          "sub2": 87,
+          "sub3": 73
+        }
+      ] 
+}

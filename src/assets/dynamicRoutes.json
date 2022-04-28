@@ -1,0 +1,40 @@
+{
+  "routes": [
+    {
+      "route": "nested-box",
+      "path": "nested/nested.module",
+      "module": "NestedModule",
+      "displayname": "Nested Box"
+    },
+    {
+      "route": "category",
+      "path": "category/category.module",
+      "module": "CategoryModule",
+      "displayname": "Category View"
+    },
+    {
+      "route": "timer-sibling",
+      "path": "timer-sibling/timer-sibling.module",
+      "module": "TimerSiblingModule",
+      "displayname": "Timer with Input and Output"
+    },
+    {
+      "route": "timer-subject",
+      "path": "timer-subject/timer-subject.module",
+      "module": "TimerSubjectModule",
+      "displayname": "Timer with Subject"
+    },
+    {
+      "route": "table",
+      "path": "table/table.module",
+      "module": "TableModule",
+      "displayname": "Table Information"
+    },
+    {
+      "route": "dynamic-div",
+      "path": "dynamic-div/dynamic-div.module",
+      "module": "DynamicDivModule",
+      "displayname": "Dynamic div"
+    }
+  ]
+}

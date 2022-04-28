@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-between flex p-5">
+  <div class="card my-3" style="width: 18rem" *ngFor="let route of data;let index=index;">
+    <div class="card-body" (click)="lazyLoadRoute(route,index)">
+      <div class="d-flex justify-content-between">
+        <h5 class="card-title">{{ route.displayname }}</h5>
+        <lion-loader *ngIf="(lazyload.isLoading$|async) && id === index"></lion-loader>
+      </div>
+      <h6 class="card-subtitle mb-2 text-muted">{{ route.displayname }}</h6>
+      <p class="card-text">
+        Some {{ route.displayname }} example text to build on the card title and
+        make up the bulk of the card's content.
+      </p>
+    </div>
+  </div>
+</div>

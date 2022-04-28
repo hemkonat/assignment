@@ -1,0 +1,17 @@
+<div class="gridbg table-responsive">
+  <table class="table width mx-auto">
+    <thead>
+      <tr style="cursor: pointer;"> 
+        <th scope="col" *ngFor="let header of tableObject.headers" (click)="onSortClick($event,header)"  style="width: 100px; height: 50px; text-align: start;">
+          {{ header }}
+          <i class="fas"></i>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of tableObject.data">
+        <td *ngFor="let head of tableObject.headers" style="width: 100px; height: 50px; text-align: start;">{{ data[head] }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
